@@ -20,35 +20,7 @@
                     </div>                    
                 </div>
                 <hr>
-            <table class="table">
-               <th>Nº</th>
-                <th>Nome do Paciente</th>
-                <tbody>                    
-                    <tr>
-                        <td>{{$prontuario->id}}</td>
-                        <td>{{$prontuario->NomeDoPaciente}}</td>
-                        </tr>
-                </tbody>
-            </table>
-            @foreach ($itens as $iten)
-            <table class="table">
-               <th>Data</th>
-                <th>Ficha de Evolução Paciente</th>
-                <tbody>                    
-                    <tr>
-                        <td>{{$prontuario->id}}</td>
-                        <td>{{$prontuario->NomeDoPaciente}}</td>
-                        <td>
-                            <button class="btn btn-default centralizado">Excluir</button>
-                            <a href="/" class="btn btn-default centralizado">Editar</a>
-                            
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            @endforeach
-            <hr>
-            <div class="row">
+                <div class="row">
                 <div class="col-xs-6">
                     
                 </div>

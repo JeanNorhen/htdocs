@@ -24,7 +24,17 @@
                     @endforeach
                 </tbody>
             </table>
- 
+            <div class="row">
+                <div class="col-xs-1">
+                    
+                </div>
+                <div class="col-xs-11">                
+                    {!! Form::open(['url'=>'prontuarios/salvar'])  !!}
+                    {!! Form::label('nome','Nome do paciente')  !!}
+                    {!! Form::input('text','NomeDoPaciente','',['class'=>'form-control','','placeholder'=>'nome do paciente aqui','autofocus'=>'autofocus'])  !!}
+                    {!! Form::submit('Salvar',['class'=>'btn btn-primary']) !!}
+                    {!! Form::close()  !!}                 
+                </div>
                 </div>
             </div>
         </div>

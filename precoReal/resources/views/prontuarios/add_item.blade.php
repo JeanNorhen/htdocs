@@ -8,18 +8,18 @@
                 <a href="{{ URL::to('/') }}" class="btn btn-default pull-right">Listar prontuarios</a>
                 <div class="panel-heading">Editar Prontuario</div>
                 <div class="panel-body">
-                <div class="row ">
-                    <div class="col-xs-6 col-sm-6 col-lg-6 col-lg-offset-2 cabacalhoProntuario">
-                        <span class="cabacalhoProntuario">ESTADO DE MATO GROSSO</span>
-                        <span class="cabacalhoProntuario">PREFEITURA MUNICIPAL DE RONDONÓPOLIS</span>
-                        <span class="cabacalhoProntuario">CAPS/AD – CENTRO DE ATENÇÃO PSICOSSOCIAL</span>
-                        <span class="cabacalhoProntuario">“AFRO CARLOS STEFANINI BAUTISTA’’</span>
+                    <div class="row ">
+                        <div class="col-xs-6 col-sm-6 col-lg-6 col-lg-offset-2 cabacalhoProntuario">
+                            <span class="cabacalhoProntuario">ESTADO DE MATO GROSSO</span>
+                            <span class="cabacalhoProntuario">PREFEITURA MUNICIPAL DE RONDONÓPOLIS</span>
+                            <span class="cabacalhoProntuario">CAPS/AD – CENTRO DE ATENÇÃO PSICOSSOCIAL</span>
+                            <span class="cabacalhoProntuario">“AFRO CARLOS STEFANINI BAUTISTA’’</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-lg-4 cabacalhoProntuario">
+                        {{Html::image('img/bandeiraRoo.png','bandeira Rondonópolis', array('class' => 'img-responsive centralizaImagem', 'style'=> 'max-width: 100px')) }}
+                        </div>                    
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-4 cabacalhoProntuario">
-                    {{Html::image('img/bandeiraRoo.png','bandeira Rondonópolis', array('class' => 'img-responsive centralizaImagem', 'style'=> 'max-width: 100px')) }}
-                    </div>                    
-                </div>
-                <hr>
+                    <hr>
             <table class="table">
                <th>Nº</th>
                 <th>Nome do Paciente</th>

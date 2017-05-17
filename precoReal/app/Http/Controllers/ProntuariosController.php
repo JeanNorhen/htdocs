@@ -32,8 +32,7 @@ class ProntuariosController extends Controller
     } 
     public function getAddprontuario()
     {
-                $prontuarios =Prontuario::get();
-        return view('prontuarios.add_prontuario',['prontuarios'=>$prontuarios]);
+        return view('prontuarios.add_prontuario');
     } 
         public function additem()
     {
@@ -42,11 +41,11 @@ class ProntuariosController extends Controller
         return View::make('prontuarios.add_item',compact('itens'),['prontuarios'=>$prontuarios]);
     } 
 
-    public function salvar(Request $request)
+    public function postSalvar(Request $request)
     {
         $prontuario = new Prontuario();
         $prontuario->create($request->all());
-        return Redirect::to('/prontuarios/add_item');
+        return Redirect::to('/prontuarios/addprontuario');
     } 
     /**
      * Display the specified resource.
